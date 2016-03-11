@@ -1,0 +1,23 @@
+Cut the original audio into more granular files with new names,
+saving the cut specifications in text files so you can edit your cuts.
+
+Run like so. ::
+
+    cutaudio 'audio/long raw audio file.mp3' 'another file.wav'
+
+The following happens to each audio file that you pass.
+
+1. If a cut file does not exist alongside the original file,
+   play the file and prompt for cuts. Cuts are saved to the cutfile.
+2. If an output directory does not exist alongside the original file,
+   process the cut file to produce the output directory.
+
+Step 1 depends on mplayer, and step 2 depends on sox.
+
+Install from PyPI. ::
+
+    pip install cutaudio
+
+Read more help. ::
+
+    cutaudio -h
