@@ -9,7 +9,7 @@ setup(name='cutaudio',
       install_requires = ['horetu'],
       version='0.0.1',
       license='AGPL',
-      classifiers=(
+      classifiers=[
           'Programming Language :: Python :: 3.5',
-      ),
+      ],
 )
