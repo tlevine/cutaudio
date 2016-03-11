@@ -182,6 +182,6 @@ def process_cutfile(infile, cuts, outdir, out_extension):
             sys.stderr.write('$ %s\n%s\n' % (cmd_str, output))
             sys.exit(1)
 
-if __name__ == '__main__':
+def main():
     import horetu
     horetu.horetu(cutaudio)
