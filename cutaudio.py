@@ -108,7 +108,7 @@ Press C^d to end early.
 
 def parse_cutfile(fp):
     for line in fp:
-        m = re.match(CUTFILE_REGEX)
+        m = re.match(CUTFILE_REGEX, line)
         if m:
             yield float(m.group(1)), m.group(2)
         else:
