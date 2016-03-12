@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import os, tempfile, subprocess
 import re
 import sys
@@ -62,11 +61,11 @@ def cutaudio(*infiles, overwrite:bool=False, extension:str=None):
         sys.exit(1)
     else:
         for infile in infiles:
-            outdir, in_extension = os.path.splittext(infile)
+            outdir, in_extension = os.path.splitext(infile)
             cutfile = outdir + '.cut'
 
-            if global_out_extension:
-                out_extension = '.' + global_out_extension.lstrip('.')
+            if extension:
+                out_extension = '.' + extension.lstrip('.')
             else:
                 out_extension = in_extension
 
